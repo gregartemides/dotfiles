@@ -24,6 +24,7 @@ Plugin 'valloric/youcompleteme'
 Plugin 'tpope/vim-surround'
 Plugin 'w0rp/ale'
 Plugin 'tpope/vim-repeat'
+Plugin 'majutsushi/tagbar'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -47,9 +48,9 @@ filetype plugin indent on    " required
 syntax on
 
 " color
-set t_Co=256
-colorscheme one
-set background=dark
+" set t_Co=256
+" colorscheme one
+" set background=dark
 
 " tab 2 spaces
 set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
@@ -84,7 +85,7 @@ if executable('ag')
 endif
  " bind K to grep word under cursor
  nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
- command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
+ " command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
 
 " vimdiff whitespace
 set diffopt=iwhite
