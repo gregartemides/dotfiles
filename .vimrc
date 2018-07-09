@@ -25,6 +25,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'w0rp/ale'
 Plugin 'tpope/vim-repeat'
 Plugin 'majutsushi/tagbar'
+Plugin 'craigemery/vim-autotag'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -92,3 +93,10 @@ set diffopt=iwhite
 
 " ctrlp show hidden files
 let g:ctrlp_show_hidden = 1
+
+" Remap leader to ,
+:let mapleader = ","
+
+" New lines with Enter
+nmap <S-Enter> O<Esc>
+nmap <CR> o<Esc>
