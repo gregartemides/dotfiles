@@ -39,6 +39,10 @@ filetype plugin indent on    " required
 " :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
 "
 " see :h vundle for more details or wiki for FAQ
+
+" Remap leader to ,
+:let mapleader = ","
+
 " Escape with jk
 :imap jk <Esc>
 
@@ -93,9 +97,6 @@ set diffopt=iwhite
 
 " ctrlp show hidden files
 let g:ctrlp_show_hidden = 1
-
-" Remap leader to ,
-:let mapleader = ","
 
 " New lines with Enter
 nmap <S-Enter> O<Esc>
