@@ -26,6 +26,8 @@ Plugin 'w0rp/ale'
 Plugin 'tpope/vim-repeat'
 Plugin 'majutsushi/tagbar'
 Plugin 'craigemery/vim-autotag'
+Plugin 'rking/ag.vim'
+Plugin 'gertjanreynaert/cobalt2-vim-theme'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -46,6 +48,9 @@ filetype plugin indent on    " required
 " Escape with jk
 :imap jk <Esc>
 
+" Remap leader to ,
+:let mapleader = ","
+
 " relative line numbers
 :set rnu!
 
@@ -54,8 +59,8 @@ syntax on
 
 " color
 " set t_Co=256
-" colorscheme one
-" set background=dark
+colorscheme cobalt2
+set background=dark
 
 " tab 2 spaces
 set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
@@ -98,6 +103,4 @@ set diffopt=iwhite
 " ctrlp show hidden files
 let g:ctrlp_show_hidden = 1
 
-" New lines with Enter
-nmap <S-Enter> O<Esc>
-nmap <CR> o<Esc>
+set linespace=4
